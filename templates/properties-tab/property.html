@@ -7,16 +7,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0f2510592c.js" crossorigin="anonymous"></script>     
-    <link rel="stylesheet" href="home.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <title>Properties</title>
 </head>
 <body>
     <div class="hero-section">
-        <img src="img/bg_home2.jpg">
+        <img src="{{ url_for('static', filename='img/bg_home2.jpg') }}">
         <div class="header">
             <div id="nav">
-                <a onclick="change_tab('')">Home</a>
-                <a onclick="change_tab('/properties-tab/property.html')">Properties</a>
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('properties') }}">Properties</a>
                 <a>Agents</a>
                 <a>Calculator</a>
                 <a>Blog</a>
@@ -52,21 +52,21 @@
         <p class="city-sub">From bustling neighborhoods to hidden gems, dive into the heart of cities and discover the unique character, amenities, and opportunities each area has to offer.</p>
         <div class="city-row">
             <div class="row">
-                <img src="img/cebu.jpg">
+                <img src="{{ url_for('static', filename='img/cebu.jpg') }}">
                 <div>
                     <span>Cebu City</span>
                     <p>2 Listings</p>
                 </div>
             </div>
             <div class="row">
-                <img src="img/mandaue.jfif">
+                <img src="{{ url_for('static', filename='img/mandaue.jfif') }}">
                 <div>
                     <span>Mandaue City</span>
                     <p>4 Listings</p>
                 </div>
             </div>
             <div class="row">
-                <img src="img/lapu.jfif">
+                <img src="{{ url_for('static', filename='img/lapu.jfif') }}">
                 <div>
                     <span>Lapu-Lapu City</span>
                     <p>6 Listings</p>
@@ -75,21 +75,21 @@
         </div>
         <div class="city-row">
             <div class="row">
-                <img src="img/talisay.jpg">
+                <img src="{{ url_for('static', filename='img/talisay.jpg') }}">
                 <div>
                     <span>Talisay City</span>
                     <p>8 Listings</p>
                 </div>
             </div>
             <div class="row">
-                <img src="img/danao.jpg">
+                <img src="{{ url_for('static', filename='img/danao.jpg') }}">
                 <div>
                     <span>Danao City</span>
                     <p>10 Listings</p>
                 </div>
             </div>
             <div class="row">
-                <img src="img/toledo.jpg">
+                <img src="{{ url_for('static', filename='img/toledo.jpg') }}">
                 <div>
                     <span>Toledo City</span>
                     <p>12 Listings</p>
@@ -102,12 +102,12 @@
         <p class="popular-sub">From luxurious residences to charming starter homes, our popular listings showcase the epitome of comfort, style, and sought-after locations.</p>
         <div class="popular-carousel">
             <div class="each-container">
-                <img class="pop" src="img/pop1.jpg">
+                <img class="pop" src="{{ url_for('static', filename='img/pop1.jpg') }}">
                 <div class="upper">
                     <p>House</p>
                     <p>For Sale</p>
                 </div>
-                <img class="profile" src="img/img1.svg">
+                <img class="profile" src="{{ url_for('static', filename='img/img1.svg') }}">
                 <h5>CEBU CITY GRAND RESIDENCES</h5>
                 <p class="pop-location">Binaliw, Cebu City</p>
                 <div class="pop-feature">
@@ -122,12 +122,12 @@
                 </div>
             </div>
             <div class="each-container">
-                <img class="pop" src="img/pop2.jpg">
+                <img class="pop" src="{{ url_for('static', filename='img/pop2.jpg') }}">
                 <div class="upper">
                     <p>House</p>
                     <p>For Sale</p>
                 </div>
-                <img class="profile" src="img/img1.svg">
+                <img class="profile" src="{{ url_for('static', filename='img/img1.svg') }}">
                 <h5>EASTLAND ESTATE</h5>
                 <p class="pop-location">Yati, Liloan</p>
                 <div class="pop-feature">
@@ -142,12 +142,12 @@
                 </div>
             </div>
             <div class="each-container">
-                <img class="pop" src="img/pop3.jpg">
+                <img class="pop" src="{{ url_for('static', filename='img/pop3.jpg') }}">
                 <div class="upper">
-                    <p>Apartment</p>
+                    <p>House</p>
                     <p>For Sale</p>
                 </div>
-                <img class="profile" src="img/img1.svg">
+                <img class="profile" src="{{ url_for('static', filename='img/img1.svg') }}">
                 <h5>PRIMEWORLD POINTE</h5>
                 <p class="pop-location">Apas, Cebu City</p>
                 <div class="pop-feature">
@@ -167,21 +167,21 @@
         <i id="pop-left-carousel" class="fa-solid fa-caret-left"></i>
     </div>
     <div class="properties">
-        <img class="bg-img" src="img/properties.jpg">
+        <img class="bg-img" src="{{ url_for('static', filename='img/properties.jpg') }}">
         <h4 class="prop-label">Explore <span>Properties</span></h4>
         <p class="prop-sub">From contemporary condos to spacious family homes and luxurious penthouses, our curated selection of properties caters to every lifestyle.</p>
         <div class="prop-carousel">
             <div class="prop-each-container">
-                <img src="img/prop1.jpg">
-                <p>Houses</p>            
+                <img src="{{ url_for('static', filename='img/prop1.jpg') }}">
+                <p>Houses</p>
             </div>
             <div class="prop-each-container">
-                <img src="img/prop2.jpg">
-                <p>Condos</p>            
+                <img src="{{ url_for('static', filename='img/prop2.jpg') }}">
+                <p>Condos</p>
             </div>
             <div class="prop-each-container">
-                <img src="img/prop3.jpg">
-                <p>Lots</p>            
+                <img src="{{ url_for('static', filename='img/prop3.jpg') }}">
+                <p>Lots</p>
             </div>
         </div>
         <i id="prop-right-carousel" class="fa-solid fa-caret-right"></i>
