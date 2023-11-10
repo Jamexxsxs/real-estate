@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0f2510592c.js" crossorigin="anonymous"></script>     
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <title>Home</title>
+</head>
+<body>
+    <div class="hero-section">
+        <img src="{{ url_for('static', filename='img/bg_home2.jpg') }}">
+        <div class="header">
+            <div id="nav">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('properties') }}">Properties</a>
+                <a>Agents</a>
+                <a>Calculator</a>
+                <a>Blog</a>
+                <a>About Us</a>
+                <a>Contact Us</a>
+            </div>
+            <div id="auth">
+                <a>Get Started</a>
+                <p>/</p>
+                <a>Log In</a>
+            </div>
+        </div>
+        <div class="hero-body">
+            <h1><span>Discover</span> Your Dream Home</h1>
+            <h3>Where Every Property Tells a Story</h3>
+            <input placeholder="Location (e.g., Cebu City, Cebu)" class="location">
+            <i id="location-i" class="fa-solid fa-location-dot"></i>
+            <div class="second-options">
+                <div>
+                    <p>For Sale/For Rent</p>
+                </div>
+                <div>
+                    <p>All Properties</p>
+                </div>
+                <i id="sale-rent-i" class="fa-solid fa-caret-down"></i>
+                <i id="property-i" class="fa-solid fa-caret-down"></i>
+            </div>
+            <button>Search <i class="fa-solid fa-magnifying-glass"></i> </button>
+        </div>
+    </div>
+    <div class="explore-city">
+        <h4 class="city-label">Explore <span>Cities</span></h4>
+        <p class="city-sub">From bustling neighborhoods to hidden gems, dive into the heart of cities and discover the unique character, amenities, and opportunities each area has to offer.</p>
+        <div class="city-row">
+            <div class="row">
+                <img src="{{ url_for('static', filename='img/cebu.jpg') }}">
+                <div>
+                    <span>Cebu City</span>
+                    <p>2 Listings</p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="{{ url_for('static', filename='img/mandaue.jfif') }}">
+                <div>
+                    <span>Mandaue City</span>
+                    <p>4 Listings</p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="{{ url_for('static', filename='img/lapu.jfif') }}">
+                <div>
+                    <span>Lapu-Lapu City</span>
+                    <p>6 Listings</p>
+                </div>
+            </div>
+        </div>
+        <div class="city-row">
+            <div class="row">
+                <img src="{{ url_for('static', filename='img/talisay.jpg') }}">
+                <div>
+                    <span>Talisay City</span>
+                    <p>8 Listings</p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="{{ url_for('static', filename='img/danao.jpg') }}">
+                <div>
+                    <span>Danao City</span>
+                    <p>10 Listings</p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="{{ url_for('static', filename='img/toledo.jpg') }}">
+                <div>
+                    <span>Toledo City</span>
+                    <p>12 Listings</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popular">
+        <h4 class="popular-label">Popular <span>Listings</span></h4>
+        <p class="popular-sub">From luxurious residences to charming starter homes, our popular listings showcase the epitome of comfort, style, and sought-after locations.</p>
+        <div class="popular-carousel">
+            <div class="each-container">
+                <img class="pop" src="{{ url_for('static', filename='img/pop1.jpg') }}">
+                <div class="upper">
+                    <p>House</p>
+                    <p>For Sale</p>
+                </div>
+                <img class="profile" src="{{ url_for('static', filename='img/img1.svg') }}">
+                <h5>CEBU CITY GRAND RESIDENCES</h5>
+                <p class="pop-location">Binaliw, Cebu City</p>
+                <div class="pop-feature">
+                    <p><i class="fa-solid fa-bed"></i><br>3 Beds</p>
+                    <p><i class="fa-solid fa-bath"></i><br>2 Baths</p>
+                    <p><i class="fa-solid fa-car"></i><br>1 Garage</p>
+                    <p><i class="fa-solid fa-landmark"></i><br>2000 Sq.M.</p>
+                </div>
+                <div class="pop-price">
+                    <div><span>₱ 2.3 million</span></div>
+                    <div><i class="fa-regular fa-comment"></i><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="each-container">
+                <img class="pop" src="{{ url_for('static', filename='img/pop2.jpg') }}">
+                <div class="upper">
+                    <p>House</p>
+                    <p>For Sale</p>
+                </div>
+                <img class="profile" src="{{ url_for('static', filename='img/img1.svg') }}">
+                <h5>EASTLAND ESTATE</h5>
+                <p class="pop-location">Yati, Liloan</p>
+                <div class="pop-feature">
+                    <p><i class="fa-solid fa-bed"></i><br>3 Beds</p>
+                    <p><i class="fa-solid fa-bath"></i><br>2 Baths</p>
+                    <p><i class="fa-solid fa-car"></i><br>1 Garage</p>
+                    <p><i class="fa-solid fa-landmark"></i><br>2000 Sq.M.</p>
+                </div>
+                <div class="pop-price">
+                    <div><span>₱ 3.6 million</span></div>
+                    <div><i class="fa-regular fa-comment"></i><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="each-container">
+                <img class="pop" src="{{ url_for('static', filename='img/pop3.jpg') }}">
+                <div class="upper">
+                    <p>House</p>
+                    <p>For Sale</p>
+                </div>
+                <img class="profile" src="{{ url_for('static', filename='img/img1.svg') }}">
+                <h5>PRIMEWORLD POINTE</h5>
+                <p class="pop-location">Apas, Cebu City</p>
+                <div class="pop-feature">
+                    <p><i class="fa-solid fa-bed"></i><br>3 Beds</p>
+                    <p><i class="fa-solid fa-bath"></i><br>2 Baths</p>
+                    <p><i class="fa-solid fa-car"></i><br>1 Garage</p>
+                    <p><i class="fa-solid fa-landmark"></i><br>2000 Sq.M.</p>
+                </div>
+                <div class="pop-price">
+                    <div><span>₱ 1.2 million</span></div>
+                    <div><i class="fa-regular fa-comment"></i><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+        </div>
+        <p class="view-more">View More</p>
+        <i id="pop-right-carousel" class="fa-solid fa-caret-right"></i>
+        <i id="pop-left-carousel" class="fa-solid fa-caret-left"></i>
+    </div>
+    <div class="properties">
+        <img class="bg-img" src="{{ url_for('static', filename='img/properties.jpg') }}">
+        <h4 class="prop-label">Explore <span>Properties</span></h4>
+        <p class="prop-sub">From contemporary condos to spacious family homes and luxurious penthouses, our curated selection of properties caters to every lifestyle.</p>
+        <div class="prop-carousel">
+            <div class="prop-each-container">
+                <img src="{{ url_for('static', filename='img/prop1.jpg') }}">
+                <p>Houses</p>            
+            </div>
+            <div class="prop-each-container">
+                <img src="{{ url_for('static', filename='img/prop2.jpg') }}">
+                <p>Condos</p>            
+            </div>
+            <div class="prop-each-container">
+                <img src="{{ url_for('static', filename='img/prop3.jpg') }}">
+                <p>Lots</p>            
+            </div>
+        </div>
+        <i id="prop-right-carousel" class="fa-solid fa-caret-right"></i>
+        <i id="prop-left-carousel" class="fa-solid fa-caret-left"></i>
+    </div>
+    <p class="dev">Developed by : <a href="https://jomary-portfolio.netlify.app/" target="_blank">Jomary N. Coquilla</a></p>
+    <script src="home.js"></script>
+</body>
+</html>
