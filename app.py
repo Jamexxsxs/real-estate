@@ -2,15 +2,17 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+@app.route("/")
 
-@app.route("/.netlify/functions/app", methods=["GET"])
 def home():
     return render_template("index.html")
 
 
-@app.route("/.netlify/functions/app/properties", methods=["GET"])
+@app.route("/properties")
 def properties():
     return render_template("properties-tab/property.html")
+
+
 
 
 if __name__ == '__main__':
