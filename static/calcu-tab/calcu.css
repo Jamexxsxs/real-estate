@@ -102,3 +102,57 @@ span{
     font-size: 1.5vw;
     letter-spacing: 0.1vw;
 }
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15vw;
+}
+
+.content .label{
+    display: flex;
+    flex-direction: row;
+}
+
+.content .label p{
+    font-size: 1vw;
+}
+
+.content .label p:first-child{
+   margin-left: 13vw;
+}
+
+.content .label p:nth-child(2){
+    margin-left: 17.5vw;
+}
+
+.content .label p:last-child{
+    margin-left: 16.6vw;
+}
+
+.content .fields{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .fields input{
+    margin-top: 0vw;
+    margin-bottom: 0.5vw;
+    margin-inline: 4vw;
+    text-indent: 0.5vw;
+    width: 15vw;
+    height: 2vw;
+    border-radius: 8px;
+    font-size: 1vw;
+    color: #050505;
+    border: 0.5px solid #66666670;
+}
+
+.content .fields i{
+    opacity: 0.6;
+    font-size: 1.2vw;
+    transform: translate(-6.5vw, -0.3vw);
+}

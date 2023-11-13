@@ -18,8 +18,8 @@ def agents():
     return render_template("agents-tab/agent.html")
 
 
-@app.route("/calcu")
-def calcu():
+@app.route("/calculator")
+def calculator():
     return render_template("calcu-tab/calcu.html")
 
 
