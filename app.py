@@ -18,5 +18,10 @@ def agents():
     return render_template("agents-tab/agent.html")
 
 
+@app.route("/calcu")
+def calcu():
+    return render_template("calcu-tab/calcu.html")
+
+
 if __name__ == '__main__':
     app.run(debug=True, threaded=True, port=5000)

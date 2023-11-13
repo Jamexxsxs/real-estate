@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0f2510592c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='calcu-tab/calcu.css') }}">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="hero-section">
+        <img src="{{ url_for('static', filename='img/bg_home2.jpg') }}">
+        <div class="header">
+            <div id="nav">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('properties') }}">Properties</a>
+                <a href="{{ url_for('agents') }}">Agents</a>
+                <a href="{{ url_for('calcu') }}">Calculator</a>
+            </div>
+            <div id="auth">
+                <a>Get Started</a>
+            </div>
+        </div>
+        <div class="hero-body">
+            <h1><span>Mortgage</span> Calculator</h1>
+            <h3>Instantly estimate your monthly payments</h3>
+        </div>
+    </div>
+</body>
+</html>
