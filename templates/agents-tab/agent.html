@@ -29,5 +29,29 @@
             <h3>Experience Expertise, Personalized Service, and Realizing Your Property Dreams</h3>
         </div>
     </div>
+    <div class="content">
+        <p class="sort">Sort by: <span>Rating</span></p>
+        {% for _ in range(28) %}
+        <div class="each-container">
+            <img class="pop" src="{{ url_for('static', filename='img/img1.svg') }}">
+            <h5>JOMARY COQUILLA</h5>
+            <p class="pop-location">San Vicente, Lilo-an</p>
+            <p class="feature">10 Listings</p>
+            <p class="feature">5 Inquirers</p>
+            <div class="pop-price">
+                <div class="rating">
+                    {% for _ in range(4) %}
+                    <i class="fa-solid fa-star"></i>
+                    {% endfor %}
+                </div>
+                <div class="cta">
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <p class="page"><span>1</span></p>
+    </div>
 </body>
 </html>
