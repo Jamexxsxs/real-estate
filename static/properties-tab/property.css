@@ -34,6 +34,7 @@ span{
     display: flex;
     overflow: hidden;
     align-items: center;
+    margin-top: 1.2vw;
 }
 
 .hero-section .header #nav {
@@ -43,7 +44,7 @@ span{
 }
 
 .hero-section .header #nav a {
-    margin-right: 2vw;
+    margin-right: 4vw;
     font-size: 1.2vw;
     cursor: pointer;
     color: #f5f5f5;
@@ -389,6 +390,11 @@ span{
 .content .property .each-container .pop-price i{
     margin-left: 2vw;
     font-size: 1.2vw;
+}
+
+.content .property .page{
+    width: 65vw;
+    text-align: center;
 }
 
 

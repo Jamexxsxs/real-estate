@@ -2,8 +2,8 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/")
 
+@app.route("/")
 def home():
     return render_template("index.html")
 
@@ -13,6 +13,9 @@ def properties():
     return render_template("properties-tab/property.html")
 
 
+@app.route("/agents")
+def agents():
+    return render_template("agents-tab/agent.html")
 
 
 if __name__ == '__main__':

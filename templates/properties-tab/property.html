@@ -17,16 +17,11 @@
             <div id="nav">
                 <a href="{{ url_for('home') }}">Home</a>
                 <a href="{{ url_for('properties') }}">Properties</a>
-                <a>Agents</a>
+                <a href="{{ url_for('agents') }}">Agents</a>
                 <a>Calculator</a>
-                <a>Blog</a>
-                <a>About Us</a>
-                <a>Contact Us</a>
             </div>
             <div id="auth">
                 <a>Get Started</a>
-                <p>/</p>
-                <a>Log In</a>
             </div>
         </div>
         <div class="hero-body">
@@ -67,7 +62,7 @@
             <button>Filter <i class="fa-solid fa-filter"></i></button>
         </div>
         <div class="property">
-            <p class="sort">Sort by: <span>Price</span></p>
+            <p class="sort">Sort by: <span>Price (Lowest - Highest)</span></p>
             {% for _ in range(30) %}
                 <div class="each-container">
                     <img class="pop" src="{{ url_for('static', filename='img/pop1.jpg') }}">
@@ -90,6 +85,7 @@
                     </div>
                 </div>
             {% endfor %}
+            <p class="page"><span>1</span></p>
         </div>
     </div>
 </body>
